@@ -35,9 +35,18 @@
   font-size: 14px;
   line-height: 20px;
 }
-.main .header__nav {
+.main__header__nav {
   display: flex;
   align-items: center;
+}
+.main__header__nav__icons__icon {
+  margin-left: 30px;
+}
+.main__header__nav__icons__icon:first-child {
+  margin-left: 0;
+}
+.main__header__nav__icons__icon:last-child {
+  margin-right: 8px;
 }
 .main .nav__btn {
   font-family: "Nunito", sans-serif;
@@ -50,15 +59,6 @@
   background-color: #fff;
   color: #156963;
 }
-.main .icons__icon {
-  margin-left: 30px;
-}
-.main .icons__icon:first-child {
-  margin-left: 0;
-}
-.main .icons__icon:last-child {
-  margin-right: 8px;
-}
 
 .landing {
   padding-top: 110px;
@@ -70,13 +70,13 @@
 .landing__bio {
   padding-right: 56px;
 }
-.landing__bio .bio__title {
+.landing__bio__title {
   font-weight: 1000;
   font-size: 68px;
   line-height: 82.89px;
   color: #156963;
 }
-.landing__bio .bio__text {
+.landing__bio__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
@@ -91,42 +91,35 @@
   width: 100%;
   height: 160px;
   border: 0;
-}
-.landing__buttons .prev {
   font-weight: 500;
   font-size: 24px;
   color: #333333;
   text-align: left;
+}
+.landing__buttons .buttons__item__title {
+  display: flex;
+}
+.landing__buttons .buttons__item__title__text {
+  display: flex;
+}
+.landing__buttons .buttons__item .prev {
   padding-left: 126px;
 }
-.landing__buttons .prev__title {
-  display: flex;
-  align-items: center;
-  height: 32px;
-}
-.landing__buttons .prev__title__text {
-  display: flex;
-}
-.landing__buttons .prev__title__text::before {
+.landing__buttons .buttons__item__title::before {
   content: url("../img/prev-btn.svg");
 }
-.landing__buttons .prev__plant {
+.landing__buttons .buttons__item__plant {
   margin-top: 10px;
   color: #156963;
   font-size: 32px;
 }
 .landing__buttons .next {
-  font-weight: 500;
-  font-size: 24px;
-  color: #333333;
-  text-align: left;
   padding-left: 49px;
 }
-.landing__buttons .next__title {
-  color: #333333;
+.landing__buttons .next__title__text {
   display: flex;
 }
-.landing__buttons .next__title::after {
+.landing__buttons .next__title__text::after {
   content: url("../img/arrow-forward.svg");
 }
 .landing__buttons .next__plant {
@@ -145,14 +138,14 @@
   border: 1px solid #E0E0E0;
   height: 155px;
 }
-.advantages__card .card__desc {
+.advantages__card__desc {
   display: flex;
   gap: 16px;
 }
-.advantages__card .card__desc .desc__title {
+.advantages__card__desc .desc__title {
   color: #156963;
 }
-.advantages__card .card__text {
+.advantages__card__text {
   margin-top: 16px;
   width: 300px;
 }
