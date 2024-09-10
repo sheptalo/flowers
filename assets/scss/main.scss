@@ -1,0 +1,339 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf');
+    font-weight: bold;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat";
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.main{
+    height: 100vh;
+    background: url('../img/bg-main.jpg') no-repeat left center / contain;
+
+    &__header{
+        padding: 0 56px;
+        height: 36px;
+        padding-top: 40px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .header__nav{
+        display: flex;
+        align-items: center;
+
+    }
+    .nav__btn{
+        font-family: "Nunito", sans-serif;
+
+        padding: 8px 20px;
+        background-color: #156963;
+        text-decoration: none;
+        color: #fff;
+    }
+    .white{
+        background-color: #fff;
+        color: #156963;
+    }
+    .icons__icon{
+        margin-left: 30px;
+    }
+    .icons__icon:first-child{
+        margin-left: 0;
+    }
+    .icons__icon:last-child{
+        margin-right: 8px;
+    }
+    
+    }
+    .landing{
+        padding-top: 110px;
+        margin-left: 50vw;
+        justify-content: space-between; 
+        align-items: end;
+        align-content: end;
+        &__bio{
+            padding-right: 56px;
+            .bio__title{
+                font-weight: 1000;
+                font-size: 68px;
+                line-height: 82.89px;
+                color: #156963;
+            }
+            .bio__text{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 32px;
+                color: #2C1500;
+                width: 493px;
+            }
+        }
+        &__buttons{
+            margin-top: 100px;
+            display: flex;
+            .buttons__item{
+                width: 100%;
+                height: 160px;
+                border: 0;
+            }
+            .prev{
+                font-weight: 500;
+                font-size: 24px;
+                color: #333333;
+                text-align: left;
+                padding-left: 126px;
+                &__title{
+                    display: flex;
+                    align-items: center;
+                    height: 32px;
+                }
+                &__plant{
+                    margin-top: 10px;
+                    color: #156963;
+                    font-size: 32px;
+                }
+
+            }
+            .next{
+                font-weight: 500;
+                font-size: 24px;
+                color: #333333;
+                text-align: left;
+                padding-left: 49px;
+                &__title{
+                    color: #333333;
+
+                    display: flex;
+                }
+                &__plant{
+                    color: #fff;
+                    margin-top: 10px;
+                    font-size: 32px;
+                }
+            }
+
+        }
+}
+.advantages{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+
+    &__card{
+        padding: 22px 30px 0 16px;
+
+        border: 1px solid #E0E0E0;
+        height: 155px;
+
+        .card__desc{
+            display: flex;
+            gap: 16px;
+
+            .desc__title{
+                color: #156963;
+            }
+        }
+        .card__text{
+            margin-top: 16px; 
+            width: 300px;
+        }
+    }
+}
+.featured{
+
+    margin-top: 120px;
+    flex-direction: column;
+    &__block{
+        display: flex;
+        justify-content: space-between;
+
+        &__title{
+            font-weight: 1000;
+            font-size: 20px;
+            line-height: 24.38px;
+        }
+        &__select{
+            border: 1px solid #E0E0E0;
+            border-radius: 1px;
+            padding: 8px 12px;
+            // option{
+            //     font-size: 12px;
+            //     line-height: 14.63px;
+            //     color: #000
+            // }
+        }
+
+    }
+    hr{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-color: #E0E0E0;
+    }
+    &__plants-list{
+        display: flex;
+        justify-content: space-between;
+        &__item{
+            text-align: center ;
+            &__price{
+                margin-top: 8px;
+                font-size: 16px;
+                font-weight: 1000;
+            }
+        }
+    }
+}
+.more-plants{
+    margin-top: 80px;
+    
+    &__block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 84px;
+        &__text{
+            &__title{
+                font-weight: 1000;
+                font-size: 40px;
+                line-height: 56px;
+                color: #2C1500;
+                width: 522px;
+            }
+            &__paragraph{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #2C1500;
+                width: 506.69px;
+            }
+        }
+        
+    }
+}
+
+.favourite-plant{
+    margin: 0 56px;
+    margin-top: 80px;
+
+    background: url('../img/bg-get.jpg') no-repeat center/cover;
+    height: 360px;
+    &__wrapper{
+        padding-top: 88px;
+        margin-left: 97px;
+        &__title{
+            width: 585px;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 56px;
+            margin-bottom: 30px;
+        }
+        &__link{
+            padding: 10px 20px;
+            background-color: #156963;
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+}
+
+.footer{
+    margin-top: 80px;
+    border-top: 1px solid #156963;
+    padding: 60px 167px;
+    display: flex;
+    justify-content: space-between;
+
+    &__item{
+        max-width: 282px;
+        &__address{
+            color: #4F4F4F;
+            font-size: 13px;
+            line-height: 20px;
+            font-family: "Work Sans", sans-serif;
+
+        }
+        &__logo{
+            color: #156963;
+            text-transform: uppercase;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 24px;
+            letter-spacing: 5%;
+            margin-bottom: 24px;
+        }
+        &__title{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+            margin-bottom: 20px;
+            font-family: "Work Sans", sans-serif;
+
+        }
+        &__form{
+            display: flex;
+            flex-direction: column;
+            &__email{
+                height: 32px;
+                width: 100%;
+                border: 1px solid #F2F2F2;
+                border-radius: 2px;
+                margin-bottom: 22px;
+            }
+            &__email::placeholder{
+                padding: 8px 13px;
+            }
+            &__button{
+                font-family: "Raleway", sans-serif; 
+                width: 51px;
+                display: block;
+                padding: 4px 12px;
+                background-color: #156963;
+                border: 0;
+                border-radius: 2px;
+                font-size: 8px;
+                color: #fff;
+                line-height: 14px;
+            }
+        }
+
+        &__link-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 46px;
+
+            &__item{
+                font-family: "Work Sans", sans-serif;
+                font-weight: 400;
+                font-size: 14px ;
+                line-height: 16px;
+                color: #000000;
+            }
+        }
+
+    }
+}
+.padd{
+    padding: 0 56px;
+}
