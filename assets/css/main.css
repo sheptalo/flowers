@@ -104,6 +104,12 @@
   align-items: center;
   height: 32px;
 }
+.landing__buttons .prev__title__text {
+  display: flex;
+}
+.landing__buttons .prev__title__text::before {
+  content: url("../img/prev-btn.svg");
+}
 .landing__buttons .prev__plant {
   margin-top: 10px;
   color: #156963;
@@ -119,6 +125,9 @@
 .landing__buttons .next__title {
   color: #333333;
   display: flex;
+}
+.landing__buttons .next__title::after {
+  content: url("../img/arrow-forward.svg");
 }
 .landing__buttons .next__plant {
   color: #fff;

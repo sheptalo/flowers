@@ -105,7 +105,16 @@
                     display: flex;
                     align-items: center;
                     height: 32px;
+
+                    &__text{
+                        display: flex;
+                    }
+
+                    &__text::before{
+                        content: url('../img/prev-btn.svg');
+                    }
                 }
+
                 &__plant{
                     margin-top: 10px;
                     color: #156963;
@@ -113,6 +122,7 @@
                 }
 
             }
+
             .next{
                 font-weight: 500;
                 font-size: 24px;
@@ -123,6 +133,9 @@
                     color: #333333;
 
                     display: flex;
+                }
+                &__title::after{
+                    content: url('../img/arrow-forward.svg');
                 }
                 &__plant{
                     color: #fff;
@@ -337,3 +350,4 @@
 .padd{
     padding: 0 56px;
 }
+
